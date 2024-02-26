@@ -1,0 +1,51 @@
+ Вариант 9 Полиглоты.
+# Функция для определения языков, которые знают все школьники
+# def languages_known_by_all(students):
+#     # Создаем множество языков первого студента
+#     all_languages = set(students[0][1])
+#
+#     # Находим пересечение множеств языков каждого студента
+#     for student in students[1:]:
+#         all_languages = all_languages.intersection(student[1])
+#
+#     return all_languages
+#
+#
+# # Функция для определения языков, которые знает хотя бы один школьник
+# def languages_known_by_at_least_one(students):
+#     # Создаем множество всех языков
+#     all_languages = set()
+#
+#     # Добавляем в множество языки каждого студента
+#     for student in students:
+#         all_languages = all_languages.union(student[1])
+#
+#     return all_languages
+
+
+# Считываем количество школьников
+# n = int(input())
+#
+# students = []
+# for _ in range(n):
+#     languages = set()
+#     num_languages = int(input())
+#     for _ in range(num_languages):
+#         language = input()
+#         languages.add(language)
+#     students.append((num_languages, languages))
+#
+# # Находим языки, которые знают все школьники
+# all_known_languages = languages_known_by_all(students)
+#
+# # Находим языки, которые знает хотя бы один школьник
+# at_least_one_known_languages = languages_known_by_at_least_one(students)
+#
+# # Выводим результат
+# print(len(all_known_languages))
+# for language in sorted(all_known_languages):
+#     print(language)
+#
+# print(len(at_least_one_known_languages))
+# for language in sorted(at_least_one_known_languages):
+#     print(language)
